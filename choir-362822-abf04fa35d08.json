@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "choir-362822",
+  "private_key_id": "abf04fa35d08729544bd16b01c7c401a67ffaac0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDWziLo9dVVfhEz\nu/8MzpeMvPxS3F64l1+Oa0p1/qax8F1vVS+D3Xsn3g26tYaJBa05/WvXScQBtvMZ\nYIR9XN/9Lnn5CVSWu2fGNvFJSmoqvCF/vZap/euzU4/TNsPyk81ndF3Dgnq8wkHu\nus48zmdiWjcWJAm5M7jXTBgyGWrgNCUpB+xRIw1nYa45NbiMFhdEoLJuyA4gVs0p\nux80O5lDrck3v8OOwnj/r9vvVZzPS0mRgT8Ysd55vUZYQGtLDrzxTfA7LcKROBmZ\nYYC8uF5iYkh2owHcRpid1Q1JwoooG2IqB3Zc+uY0oEmdKgRRQ3bsOzUviUW+dt55\nzpVuHK/bAgMBAAECggEAAgUHTf/4Lst7dOxWUJtlbew2Wb8YdCEC/vQ66RzfQYRZ\n2XhSJhYirC9nVi5rIq1ekD2sFyubutV5aSCOdbsieRWDIYm5HNgB20cN0LjxDDe8\n/4JbtxkSIMK0BtR7GxaV+txN9sT5aP49ghMnLpGQPuXVtjhP1MjpcOKgPGHkQlHr\nsno9+RMrp8KF2TytOsrtmtdhIzYezZcDvKohWoar2YpqGDr/EvF+9WRwINdTtFKI\nE0IXKP4+uOrStjlr5txg/PqEFUuegQBcxbbLfvrk+8EgxJ9gtuUkxiDmarnBypK2\nGYJI8bIik3yM15VK2tnCyLzzroHx1Se2YJ+G34bdNQKBgQD6ik+Iq/rau2RqLiJV\nrg+7x3K+LRCi9v1xWAfmvNRXIdkSgSyENYcuN9iYcDuVmw/QsGgINzTt25eTo9In\njSuopQC6ECw8Jd/3fiKLt9VA4zHfAv4mTbaZqRcoLcQ2eAW8UnHBB6COFW2/mKgo\nYT+m33onkoEFa8OryU/k8Os9fQKBgQDbfHhyHkhIuEh3SrnGD9Ru+7lU/OpepHqy\n7SCW5sROz7Nnt3K7Qk36+tdJfAlLkG3dWM72OhVOaUD39EaFM864hpt7sPQ30Pp+\nh4IDgnrZ7HB6fj3L9bfXX+/LaSnxT8cikBQjTx7B3lWCLjBHrDMicChPn6XzY/h4\nM93EIw2CNwKBgAfutyPxpgik5EIEYevqje75GqXw0VUHkvCyw9VHZ0W2+aN/WYR6\nGWSaOg5hh1FuTmriGvkfnlplmIABMNc1vgsh5kr91hi1bkjswnVABc1/JAYWlytp\nTH3C/8uy30KGPFBBH/7nmerFvOrTD4fvxE8pRjnYhqNATTq0LgZmplwVAoGAXuze\nSry+FnVdIfq3jemavsUvyon38ya/ylK0HY+Ap3U86kZ04Hg0sa97HNUAUCYO3gRi\nviswu9DZwGNtfH6DkVrmNAC8HsfLDp4cpNfxuf6ARvoCUAvdjtB3LUo2UZ9nSJN3\noi2956r44GyJhPX8x5AqXwV1CGbcN2B3MTTXytECgYEA7kQnD8E9K7tD/wJ0vDXs\nmBnEtDHp8DhV37tI9rRMCYGTzXp7r93vOtKaSmGt3JHi34HqnOFW74oR+cloXHay\nbQnQlU1MjTjJk4UDyo1gZpznQOMsqLj5vjRsteItIbI5sYR4xVmnyc3AlwWqtOGo\nyt6y7ybnm954VKwYi6xFcwI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "choir-service@choir-362822.iam.gserviceaccount.com",
+  "client_id": "115719250110219923162",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/choir-service%40choir-362822.iam.gserviceaccount.com"
+}
