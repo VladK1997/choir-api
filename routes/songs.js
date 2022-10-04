@@ -1,11 +1,10 @@
 import express from 'express';
 const router = express.Router();
 import {google} from "googleapis";
-import {getDriveDownloadLink, createDriveLink} from "../helpers/link.js";
+import { createDriveLink} from "../helpers/link.js";
 import multiparty from "multiparty";
 import { uploadBasic } from "../helpers/drive.js";
 import {getSheetsSongArray} from "../helpers/sheetsTemplates.js";
-const filesFieldsNames = ["gtp", "pdf1_file", "pdf2_file", "pdf3_file", "pdf4_file", "pdf5_file"];
 router.get('/', async (req, res) => {
     try {
         const auth = new google.auth.GoogleAuth({
@@ -19,24 +18,34 @@ router.get('/', async (req, res) => {
         const getRows = await googleSheets.spreadsheets.values.get({
             auth,
             spreadsheetId,
-            range: "Songs!A2:M100"
+            range: "Songs!A2:M"
         })
         const arr = getRows.data.values.map(item => {
-            const obj = {
-                title: item[0],
-                gtp: item[1],
-                pdf: [],
-                words: item[12],
-            }
-            for (let i = 1, l = 5; i < l; i++) {
-                if (item[2*i]) {
-                    obj.pdf.push({
-                        title: item[2*i],
-                        link: getDriveDownloadLink(item[2*i + 1])
-                    })
+            try {
+                if(item[0].length) {
+                    console.log(item[0]);
                 }
+                const obj = {
+                    title: item[0],
+                    gtp: item[1] || "",
+                    pdf: [],
+                    words: item[12] || "",
+                }
+                for (let i = 1, l = 5; i < l; i++) {
+                    if (item[2 * i].length) {
+                        console.log(item[2 * i]);
+                    }
+                    if (item[2*i]) {
+                        obj.pdf.push({
+                            title: item[2*i] || "",
+                            link: item[2*i + 1] || ""
+                        })
+                    }
+                }
+                return obj
+            } catch (err) {
+
             }
-            return obj
         })
         res.json(arr)
     } catch (err) {
@@ -72,8 +81,8 @@ router.post('/create', async  (req, res) => {
             }
         })
     });
-    res.json({
+    res.status(200).json({
         "text": "everything good)"
-    })
+    });
 })
 export default router;
