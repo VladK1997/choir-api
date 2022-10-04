@@ -19,7 +19,7 @@ router.get('/', async (req, res) => {
         const getRows = await googleSheets.spreadsheets.values.get({
             auth,
             spreadsheetId,
-            range: "Songs!A2:M3"
+            range: "Songs!A2:M"
         })
         const arr = getRows.data.values.map(item => {
             const obj = {
