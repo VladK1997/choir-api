@@ -1,7 +1,6 @@
 import { GoogleAuth } from "google-auth-library";
 import {google} from "googleapis";
 export const uploadBasic = async (uploadedFile) => {
-    console.log("uploadBasic", uploadedFile);
     const auth = new google.auth.GoogleAuth({
         keyFile: process.env.KEY_FILE,
         scopes: "https://www.googleapis.com/auth/drive",
@@ -18,7 +17,6 @@ export const uploadBasic = async (uploadedFile) => {
             media: uploadedFile,
             fields: 'id',
         });
-        console.log('File Id:', file.data.id);
         return file.data.id;
     } catch (err) {
         throw err;

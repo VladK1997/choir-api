@@ -11,6 +11,7 @@ async function start() {
     try {
         app.use(cors());
         app.use('/songs',songs);
+        app.use(express.json());
         // app.use(express.static('public'));
         server.listen(PORT, () => console.log(
             "Server started on http://" + HOST + ":" + PORT
