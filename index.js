@@ -9,7 +9,9 @@ const PORT = process.env.PORT || 3000;
 const HOST = process.env.HOST || '0.0.0.0';
 async function start() {
     try {
-        app.use(cors());
+        app.use(cors({
+            origin: "https://vladk1997.github.io"
+        }));
         app.use('/songs',songs);
         app.use(express.json());
         // app.use(express.static('public'));
