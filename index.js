@@ -10,7 +10,8 @@ const HOST = process.env.HOST || '0.0.0.0';
 async function start() {
     try {
         app.use(cors({
-            origin: "https://vladk1997.github.io"
+            origin: "https://vladk1997.github.io",
+            methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']
         }));
         app.use('/songs',songs);
         app.use(express.json());
